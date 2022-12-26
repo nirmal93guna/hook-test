@@ -57,7 +57,7 @@ pipelines:
           inputSteps:
             - name: p1_s2
           outputResources:
-            - name: test_app
+            - name: myPropertyBag
         execution:
           onExecute:
             - echo $current_runid
@@ -71,7 +71,7 @@ pipelines:
         type: Jenkins
         configuration:
           inputSteps:
-            - name: p1_s3
+            - name: p1_s2
           jenkinsJobName: testFolder/pipetest
           integrations:
             - name: int_jenkins
