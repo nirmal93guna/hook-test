@@ -71,7 +71,5 @@ pipelines:
         type: Jenkins
         configuration:
           jenkinsJobName: testFolder/pipetest
-          inputResources:
-            - name: p1_s3
           integrations:
             - name: int_jenkins
