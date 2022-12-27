@@ -77,7 +77,7 @@ pipelines:
             - name: int_jenkins
           outputResources:
             - name: myPropertyBag
-      - name: ping jenkins
+      - name: pingJenkins
         type: Bash
         configuration:
           inputSteps:
