@@ -77,3 +77,14 @@ pipelines:
             - name: int_jenkins
           outputResources:
             - name: myPropertyBag
+      - name: ping jenkins
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: p1_s2
+          outputResources:
+            - name: myPropertyBag
+        execution:
+          onExecute:
+            - ping 10.90.113.177
+            - write_output myPropertyBag commitSha=$commitSha runID=$current_runid
