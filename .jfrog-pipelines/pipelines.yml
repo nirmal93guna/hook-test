@@ -74,6 +74,6 @@ pipelines:
             - name: p1_s2
           jenkinsJobName: testFolder/pipetest
           integrations:
-            - name: int_jenkins2
+            - name: int_jenkins
           outputResources:
             - name: myPropertyBag
