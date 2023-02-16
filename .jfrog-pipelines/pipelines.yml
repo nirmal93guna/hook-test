@@ -7,6 +7,9 @@ resources:
     configuration:
       # SCM integration where the repository is located
       gitProvider: {{ .Values.myRepo.gitProvider }} # this will be replaced from values.yml
+      buildOn:
+        branchCreate: false
+        branchDelete: false
       # Repository path, including org name/repo name
       path: {{ .Values.myRepo.path }} # this will be replaced from values.yml
       branches:
